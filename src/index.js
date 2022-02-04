@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import App from './App';
+import "./index.scss"
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Pixer.uz</h1>
+      <div className="container">
+          <App />
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
