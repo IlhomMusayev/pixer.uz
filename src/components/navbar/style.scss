@@ -21,8 +21,8 @@ nav{
         background-color: #292929;
         text-align: left;
         padding: 50px;
-        transition: all 0.25s;
-        -webkit-transition: all 0.25s;
+        animation: slide-in 0.5s forwards;
+        -webkit-animation: slide-in 0.5s forwards;
 
         .close__btn{
             width: 100%;
@@ -66,3 +66,23 @@ nav{
         }
     }
 }
+
+@keyframes slide-in {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+

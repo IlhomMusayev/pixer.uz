@@ -1,9 +1,9 @@
+import Team from '../../components/team'
 
-
-export default function Team(){
+export default function Teams(){
     return(
         <>
-            Team
+            <Team/>
         </>
     )
 }

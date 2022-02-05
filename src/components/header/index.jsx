@@ -13,8 +13,8 @@ export default function Header(){
                 </span>
 
                 <div className="content__text">
-                    <h2>We are a <span>digital</span><br/>
-                        creative studio</h2>
+                    <h2>We are a <span>software</span><br/>
+                        company</h2>
                 </div>
 
                 <button className="btn"><

@@ -11,7 +11,7 @@ export default function Footer (){
             <footer>
                     <ul className="footer__list">
                         <li className="list__item">
-                            <Link to="/contacts">Contact Us</Link>
+                            <Link to="/contact">Contact Us</Link>
                         </li>
                     </ul>
 

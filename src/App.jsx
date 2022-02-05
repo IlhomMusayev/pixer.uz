@@ -10,6 +10,7 @@ import Work from './pages/Work/work'
 import WorkItem from './pages/Work_item/work'
 import Contact from './pages/Contact/contact'
 import Team from './pages/Team/Team'
+import NotFound from './pages/NotFound/notfound'
 
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
 
                 <Route path = "/team" exact>
                     <Team />
+                </Route>
+
+                <Route path = "*" exact>
+                    <NotFound />
                 </Route>
             </Switch>
           <Footer/>

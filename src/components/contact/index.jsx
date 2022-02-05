@@ -16,7 +16,7 @@ export default function Contact() {
                 <div className="cards">
                     <div className="card_item">
                         <div className="office__location">
-                            <h3>/ tashkent</h3>
+                            <h3>/ location</h3>
                             <span>Office</span>
                             <p>Toshkent shahar, Olmazor tumani, Navoiy ko’chasi, 18-uy</p>
                         </div>
@@ -24,7 +24,17 @@ export default function Contact() {
                             <img src= {officeIcon} alt="office_icon"/>
                         </div>
                     </div>
-                </div>
+                      <div className="card_item">
+                        <div className="office__location">
+                            <h3>/ phone number</h3>
+                            <span>Office</span>
+                            <p>+998 99 455 12 60</p>
+                        </div>
+                        <div className="office__icon">
+                            <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-call-hotel-kiranshastry-lineal-kiranshastry.png"/>
+                        </div>
+                      </div>
+                    </div>
             </div>
         </div>
     )
