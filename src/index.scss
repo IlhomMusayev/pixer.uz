@@ -23,3 +23,11 @@ ul{
   width: 1250px;
   margin: 0 auto;
 }
+
+
+@media (max-width: 776px) {
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -44,10 +44,10 @@ export default function Navbar(){
                                 /work
                             </li>
                             <li className="nav__lists__items__item">
-                                <Link to="/works">Work</Link>
+                                <Link to="/works" onClick={(e) => setOpenMenu(false)}>Work</Link>
                             </li>
                             <li className="nav__lists__items__item">
-                                <Link to="/blog">Blog</Link>
+                                <Link to="/blog" onClick={(e) => setOpenMenu(false)}>Blog</Link>
                             </li>
                         </ul>
                         <ul className="nav__lists__items">
@@ -55,10 +55,10 @@ export default function Navbar(){
                                 /about
                             </li>
                             <li className="nav__lists__items__item">
-                                <Link to="/services">Services</Link>
+                                <Link to="/services" onClick={(e) => setOpenMenu(false)}>Services</Link>
                             </li>
                             <li className="nav__lists__items__item">
-                                <Link to="/team">Team</Link>
+                                <Link to="/team" onClick={(e) => setOpenMenu(false)}>Team</Link>
                             </li>
                         </ul>
                         <ul className="nav__lists__items">
@@ -66,7 +66,7 @@ export default function Navbar(){
                                 /reach us
                             </li>
                             <li className="nav__lists__items__item">
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/contact" onClick={(e) => setOpenMenu(false)}>Contact</Link>
                             </li>
                         </ul>
                     </ul>

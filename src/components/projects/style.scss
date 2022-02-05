@@ -42,3 +42,12 @@
     margin-left: 10px;
   }
 }
+
+
+@media (max-width: 776px) {
+  .projects{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0;
+  }
+}

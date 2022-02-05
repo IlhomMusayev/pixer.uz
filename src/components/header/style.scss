@@ -1,5 +1,5 @@
 header{
-  background-image: url("http://s3.amazonaws.com/wordpress-static-files/wp-content/uploads/2018/08/08182537/home-desktop.gif");
+  background: url("http://s3.amazonaws.com/wordpress-static-files/wp-content/uploads/2018/08/08182537/home-desktop.gif") no-repeat center;
   height: 70vh;
 
   display: flex;
@@ -56,7 +56,7 @@ header{
 
 .work_header{
   .header {
-    background: url("../../assets/images/project_header.png") no-repeat ;
+    background: url("../../assets/images/project_header.png") no-repeat center;
     height: 70vh;
   }
 
@@ -64,9 +64,24 @@ header{
     margin-top: 50px;
 
     .btn__line{
-
+      height: 100%;
     }
   }
+}
 
 
+
+@media (max-width: 776px) {
+  header{
+    .content{
+      .icon{
+        font-size: 30px;
+      }
+      &__text{
+        h2{
+          font-size: 40px;
+        }
+      }
+    }
+  }
 }
