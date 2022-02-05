@@ -1,0 +1,67 @@
+.contact{
+  height: 70vh;
+
+  span{
+    font-size: 45px;
+    line-height: 51px;
+    letter-spacing: -0.01em;
+    color: #000000;
+    transform: rotate(45deg);
+  }
+  .title{
+  margin: 30px 0;
+    h2{
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 55px;
+      color: #000000;
+      font-family: Gilroy-Medium;
+    }
+
+  }
+
+  .cards{
+    .card_item{
+        width: 50%;
+        background-color: #EDC938;
+        padding: 55px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .office__location{
+        width: 50%;
+        h3{
+          font-weight: 800;
+          font-size: 28px;
+          line-height: 38px;
+          color: #000000;
+          font-family: 'Gilroy-Medium', sans-serif;
+
+        }
+        span{
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 34px;
+          color: #000000;
+          font-family: 'Gilroy-Regular', sans-serif;
+        }
+        p{
+          margin-top: 20px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+          font-family: 'Gilroy-Light', sans-serif;
+
+        }
+
+      }
+      .office__icon{
+
+
+      }
+    }
+  }
+}

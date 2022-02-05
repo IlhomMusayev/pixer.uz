@@ -1,6 +1,5 @@
 header{
   background-image: url("http://s3.amazonaws.com/wordpress-static-files/wp-content/uploads/2018/08/08182537/home-desktop.gif");
-  width: 150%;
   height: 70vh;
 
   display: flex;
@@ -51,4 +50,23 @@ header{
       }
     }
   }
+}
+
+
+
+.work_header{
+  .header {
+    background: url("../../assets/images/project_header.png") no-repeat ;
+    height: 70vh;
+  }
+
+  .container{
+    margin-top: 50px;
+
+    .btn__line{
+
+    }
+  }
+
+
 }

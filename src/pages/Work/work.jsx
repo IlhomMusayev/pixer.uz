@@ -1,8 +1,10 @@
+import Category from '../../components/cotegoys'
+
 
 export default function Work() {
     return(
         <>
-            <h2>Projects</h2>
+            <Category />
         </>
     )
 }

@@ -1,68 +1,44 @@
+.projects{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+}
+.title{
+  margin-top: 50px;
+  h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #000000;
+    font-family: 'Gilroy-Medium', sans-serif;
+  }
+}
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
+.btn__line{
+  margin-top: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Gilroy-Light', sans-serif;
+  img{
+    width: 50px;
+    height: 1px;
+  }
 
-    button{
-        background: none;
-        border: none;
-        cursor: pointer;
+  &:hover{
+    img{
+      width: 70px;
+      transition: 0.5s;
     }
-
-    .sidebar{
-        display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 25%;
-        background-color: #292929;
-        text-align: left;
-        padding: 50px;
-        transition: all 0.25s;
-        -webkit-transition: all 0.25s;
-
-        .close__btn{
-            width: 100%;
-            display: flex;
-            justify-content: right;
-        }
-
-        .nav__lists{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 25%;
-            &__items{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-
-                .title{
-                    font-weight: 100;
-                    font-family: 'Gilroy-Medium', sans-serif;
-                    color: #A0DDFF;
-                    &:hover{
-                        text-decoration: none;
-                    }
-                }
-                &__item{
-                    margin: 7px;
-                    padding: 7px;
-                    a{
-                        color: #fff;
-                        text-decoration: none;
-                    }
-
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-
-            }
-        }
-    }
+  }
+  span{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: 10px;
+  }
 }

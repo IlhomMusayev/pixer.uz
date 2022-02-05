@@ -1,0 +1,104 @@
+
+
+.description{
+
+  .name{
+    margin: 30px 0;
+    h3{
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 66px;
+      letter-spacing: -0.01em;
+      color: #000000;
+      font-family: 'Gilroy-Medium', sans-serif;
+    }
+
+  }
+
+  &__content{
+    margin-bottom: 50px;
+    .desciption__list{
+      display: flex;
+
+      .desciption__list__item{
+        margin-right: 50px;
+        .list__item{
+          li{
+            h4{
+              margin-bottom: 10px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 26px;
+              letter-spacing: -0.01em;
+              font-family: 'Gilroy-Medium', sans-serif;
+              color: #000000;
+            }
+
+            p{
+              font-size: 16px;
+              line-height: 26px;
+              /* or 162% */
+
+              letter-spacing: -0.01em;
+
+              color: #000000;
+              font-family: 'Gilroy-Light', sans-serif;
+            }
+          }
+        }
+      }
+      .desciption__list__item:nth-child(1){
+        width: 30%;
+      }
+      .desciption__list__item:nth-child(2){
+        width: 10%;
+      }
+      .desciption__list__item:nth-child(3){
+        width: 10%;
+      }
+      .desciption__list__item:nth-child(4){
+        width: 10%;
+      }
+    }
+  }
+}
+
+
+
+.about__project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292929;
+  .images{
+      width: 60%;
+      height: 50vh;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  }
+  .about__project__content{
+    width: 40%;
+    margin-left: 50px;
+    h3{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      font-family: 'Gilroy-Medium', sans-serif;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      font-family: 'Gilroy-Light', sans-serif;
+    }
+  }
+
+
+}

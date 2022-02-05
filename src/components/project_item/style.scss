@@ -1,68 +1,38 @@
+.project__item{
+    margin-top: 50px;
+    &__img{
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-
-    button{
-        background: none;
-        border: none;
-        cursor: pointer;
+        img{
+            width: 100%;
+        }
     }
 
-    .sidebar{
-        display: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 25%;
-        background-color: #292929;
-        text-align: left;
-        padding: 50px;
-        transition: all 0.25s;
-        -webkit-transition: all 0.25s;
+    &__content{
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
 
-        .close__btn{
-            width: 100%;
-            display: flex;
-            justify-content: right;
+        h2{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 34px;
+            letter-spacing: -0.01em;
+            color: #000000;
+            margin-right: 8px;
+            font-family: 'Gilroy-Medium', sans-serif;
         }
+        span{
+            font-size: 18px;
+            line-height: 34px;
+            letter-spacing: -0.01em;
+            color: #000000;
+            font-family: 'Gilroy-Light', sans-serif;
 
-        .nav__lists{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 25%;
-            &__items{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-
-                .title{
-                    font-weight: 100;
-                    font-family: 'Gilroy-Medium', sans-serif;
-                    color: #A0DDFF;
-                    &:hover{
-                        text-decoration: none;
-                    }
-                }
-                &__item{
-                    margin: 7px;
-                    padding: 7px;
-                    a{
-                        color: #fff;
-                        text-decoration: none;
-                    }
-
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-
-            }
         }
+    }
+    &:hover{
+        opacity: 0.9;
+        transition: 0.4s;
     }
 }
