@@ -2,9 +2,12 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-} from "react-router-dom";import Home from './pages/Home/Home'
+} from "react-router-dom";
+import Home from './pages/Home/Home'
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 import Work from './pages/Work/work'
+
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
                     <Work />
                 </Route>
             </Switch>
+          <Footer/>
         </Router>
       </>
   );

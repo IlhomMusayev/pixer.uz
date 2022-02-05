@@ -1,12 +1,20 @@
 @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
-
-body{
-
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #000;
+}
+body{
   font-family: 'Gilroy-Bold', sans-serif;
+  background-color: #efefef;
+}
 
+ul{
+  list-style: none;
+  li{
+    list-style-type: none;
+  }
 }
 
 .container{

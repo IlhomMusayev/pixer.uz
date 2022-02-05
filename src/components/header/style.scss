@@ -1,6 +1,6 @@
 header{
-  background-image: url("../../assets/images/header.png");
-  width: 100%;
+  background-image: url("http://s3.amazonaws.com/wordpress-static-files/wp-content/uploads/2018/08/08182537/home-desktop.gif");
+  width: 150%;
   height: 70vh;
 
   display: flex;
@@ -17,6 +17,7 @@ header{
         font-weight: normal;
         font-size: 50px;
         line-height: 50px;
+        margin: 30px 0;
         span{
           font-family: 'Gilroy-Bold', sans-serif;
         }
@@ -30,10 +31,23 @@ header{
       background: none;
       border: none;
       cursor: pointer;
+      font-family: 'Gilroy-Light', sans-serif;
+      img{
+        width: 50px;
+        height: 1px;
+      }
+
+      &:hover{
+        img{
+          width: 70px;
+          transition: 0.5s;
+        }
+      }
       span{
         font-weight: 600;
         font-size: 15px;
         line-height: 24px;
+        margin-left: 10px;
       }
     }
   }
