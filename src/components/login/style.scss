@@ -1,0 +1,36 @@
+.login{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size:35px;
+        margin-bottom: 30px;
+    }
+
+    form{
+        label{
+            display: block;
+            margin: 0 auto;
+            padding: 5px 0;
+
+            span{
+            }
+            
+            .input{
+                display: block;
+                padding: 10px;
+                margin: 5px 0;
+            }
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 30px;
+            margin-top: 20px;
+        }
+
+
+    }
+}

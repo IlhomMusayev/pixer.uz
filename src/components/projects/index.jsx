@@ -26,7 +26,8 @@ export default function Projects(){
 
 
     return(
-        <div className={"container"}>
+       <div className="last__works">
+            <div className={"container"}>
             <div className="title">
                 <h2>Last works</h2>
             </div>
@@ -43,5 +44,6 @@ export default function Projects(){
                 <span>SEE OUR WORK</span>
             </Link>
         </div>
+       </div>
     )
 }

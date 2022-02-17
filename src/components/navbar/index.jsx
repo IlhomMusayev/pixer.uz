@@ -18,7 +18,8 @@ export default function Navbar(){
 
 
     return(
-        <div className={"container"}>
+        <div className="navbar">
+             <div className={"container"}>
             <nav>
                 <div className = "logo">
                     <Link to = '/'>
@@ -76,6 +77,7 @@ export default function Navbar(){
                     </ul>
                 </div>
             </nav>
+        </div>
         </div>
     )
 }

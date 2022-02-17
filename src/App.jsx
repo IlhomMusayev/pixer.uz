@@ -1,8 +1,10 @@
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
+
+import PublicRoute from './routes/PublicRoute'
+import PrivateRoute from './routes/PrivateRoute'
+
+import { AuthProvider } from './contexts/AuthContext'
+
 import Home from './pages/Home/Home'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
@@ -11,40 +13,72 @@ import WorkItem from './pages/Work_item/work'
 import Contact from './pages/Contact/contact'
 import Team from './pages/Team/Team'
 import NotFound from './pages/NotFound/notfound'
-
+import Login from './pages/Login/login' 
+import Admin from './pages/Admin'
 
 function App() {
   return (
-      <>
-        <Router>
-          <Navbar />
+    <AuthProvider>
+        <BrowserRouter>
+            <Navbar/>
             <Switch>
-                <Route path = "/" exact>
-                    <Home />
-                </Route>
-                <Route path = "/works" exact>
-                    <Work />
-                </Route>
+                <PublicRoute path="/" component={Home} exact />
 
-                <Route path = "/works/:project_slug" exact>
-                    <WorkItem />
-                </Route>
+                <PublicRoute
+                    path="/works"
+                    component={Work}
+                    exact
+                />
 
-                <Route path = "/contact" exact>
-                    <Contact />
-                </Route>
+                <PublicRoute
+                    path="/team"
+                    component={Team}
+                    exact
+                />
 
-                <Route path = "/team" exact>
-                    <Team />
-                </Route>
+                <PublicRoute
+                    path="/contacts"
+                    component={Contact}
+                    exact
+                />
 
-                <Route path = "*" exact>
-                    <NotFound />
-                </Route>
+                 <PublicRoute
+                    path="/works/:project_name"
+                    component={WorkItem}
+                    exact
+                />
+
+                <PublicRoute 
+                    path="/login" 
+                    component={Login} 
+                    exact 
+                />
+
+
+                <PublicRoute 
+                    path="/login" 
+                    component={Login} 
+                    exact 
+                />
+
+                <PrivateRoute
+                    path="/admin"
+                    component={Admin}
+                    exact
+                />
+
+                <PublicRoute 
+                    path="*" 
+                    component={NotFound} 
+                    exact 
+                />
+
+
+
             </Switch>
-          <Footer/>
-        </Router>
-      </>
+            <Footer />
+        </BrowserRouter>
+	</AuthProvider>
   );
 }
 

@@ -7,8 +7,8 @@ import youtube_logo from '../../assets/images/youtube.png'
 
 export default function Footer (){
     return(
-        <div className={"container"}>
-            <footer>
+        <div className = "footer">
+            <footer className={"container"}>
                     <ul className="footer__list">
                         <li className="list__item">
                             <Link to="/contact">Contact Us</Link>
