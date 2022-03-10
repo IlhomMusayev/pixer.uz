@@ -17,7 +17,6 @@ function client(
     return window
         .fetch(`${apiURL.API_URL}/${endpoint}`, config)
         .then(async (response) => {
-            console.log(response)
             if (response.status === 401) {
                 await window.localStorage.removeItem("token")
                 window.location.assign('/')

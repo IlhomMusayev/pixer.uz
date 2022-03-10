@@ -1,5 +1,6 @@
 import "./style.scss";
 // import Tingla from '../../assets/images/tingla.png'
+import constants from '../../config/constants'
 
 import {Link} from 'react-router-dom'
 
@@ -9,7 +10,7 @@ export default function Project_item({name, project_type, img, slug, style}){
             <div className="project__item" style={{style}}>
                 <Link to = {"/works/"+slug}>
                     <div className="project__item__img">
-                        <img src={img} alt="project__image"/>
+                        <img src={constants.API_URL+"/files/"+img} alt="project__image"/>
                     </div>
 
                     <div className="project__item__content">

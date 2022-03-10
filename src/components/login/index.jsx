@@ -24,8 +24,6 @@ export default function Login(){
                 return;
             };
 
-            console.log(username, password);
-
             let res = await UserService.LoginAccount(username, password)
             
 			if (res?.data?.token){

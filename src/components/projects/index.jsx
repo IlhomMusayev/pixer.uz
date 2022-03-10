@@ -3,28 +3,28 @@ import Project_item from '../project_item'
 import line from "../../assets/images/Line.png";
 import Tingla from '../../assets/images/tingla.png'
 import Nikoh from '../../assets/images/nikoh.png'
+import ProjectService from '../../services/ProjectService'
 
 import {Link} from 'react-router-dom'
+import { useState, useEffect } from "react";
 
 
 export default function Projects(){
+    const [data, setData] = useState([])
 
-    const data = [
-        {
-            name: "Tingla",
-            project_type: "Mobile app",
-            img: Tingla,
-            slug: "tingla"
-        },
-        {
-            name: "Nikoh",
-            project_type: "Web and Mobile app",
-            img: Nikoh,
-            slug: "nikoh"
-        }
-    ]
+            
+    const getProjects = async (e) => {
+        const projects = await ProjectService.AllPorjects()
+        setData(projects?.data?.projects)
+      }
+  
+      useEffect(() => {
+        getProjects()
+  
+        return () => {};
+      }, []);
 
-
+      console.log(data);
     return(
        <div className="last__works">
             <div className={"container"}>
@@ -34,7 +34,7 @@ export default function Projects(){
             <div className="projects">
                 {
                     data.map(item => {
-                        return(<Project_item name = {item.name} project_type={item.project_type} img={item.img} slug={item.slug}/>)
+                        return(<Project_item name = {item.project_name} project_type={item.category.category_name} img={item.project_image} slug={item.slug}/>)
                     })
                 }
             </div>
